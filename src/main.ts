@@ -22,5 +22,5 @@ import { ConfigService } from '@nestjs/config';
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup(configService.get<string>('SITE_PREFIX'), app, document);
 
-  await app.listen(configService.get<string>('PORT') || 3501);
+  await app.listen(configService.get<string>('PORT') || 4401);
 })();
